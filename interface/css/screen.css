@@ -1,0 +1,333 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,300);
+/* line 17, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 7, ../sass/screen.scss */
+::selection {
+  background: #b1c0c9;
+  color: color #006e9d; }
+
+/* line 11, ../sass/screen.scss */
+::-moz-selection {
+  background: #b1c0c9;
+  color: color #006e9d; }
+
+/* line 15, ../sass/screen.scss */
+body {
+  color: black;
+  font-family: "Helvetica", sans-serif;
+  font-size: 1.125em;
+  font-weight: 300; }
+
+/* line 21, ../sass/screen.scss */
+h1 {
+  margin: 0 0 18px 0;
+  font-size: 1.333em;
+  font-weight: 700;
+  line-height: 1.2em; }
+
+/* line 28, ../sass/screen.scss */
+p {
+  margin: 0;
+  line-height: 1.5em; }
+
+/* line 32, ../sass/screen.scss */
+a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none; }
+  /* line 36, ../sass/screen.scss */
+  a:hover {
+    border-bottom: 2px solid black; }
+
+/* line 40, ../sass/screen.scss */
+strong {
+  font-weight: 700; }
+
+/* line 44, ../sass/screen.scss */
+form input {
+  -webkit-appearance: none;
+  outline: none; }
+
+/* line 57, ../sass/screen.scss */
+.banner {
+  height: 600px;
+  background: url("../images/banners/banner-03.jpg") center;
+  position: relative; }
+
+/* line 64, ../sass/screen.scss */
+.tiles {
+  position: relative;
+  width: 840px;
+  height: 600px;
+  margin: 0 auto; }
+  /* line 69, ../sass/screen.scss */
+  .tiles li {
+    width: 120px;
+    max-width: 120px;
+    height: 120px;
+    line-height: 130px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    -webkit-transition: top, left 0.5s;
+    -moz-transition: top, left 0.5s;
+    -o-transition: top, left 0.5s;
+    transition: top, left 0.5s; }
+    /* line 78, ../sass/screen.scss */
+    .tiles li a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: white;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+      /* line 84, ../sass/screen.scss */
+      .tiles li a:hover {
+        color: black;
+        background: white;
+        border: 0;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+
+/* line 93, ../sass/screen.scss */
+.logo {
+  background: black;
+  font-size: 2em;
+  font-weight: 500; }
+  /* line 54, ../sass/_base.scss */
+  .logo:before {
+    font-family: 'icomoon';
+    content: "\e007";
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased; }
+
+/* line 106, ../sass/screen.scss */
+.dribbble {
+  background: #c73367;
+  top: 0;
+  left: 120px; }
+  /* line 54, ../sass/_base.scss */
+  .dribbble a:before {
+    font-family: 'icomoon';
+    content: "\e005";
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased; }
+
+/* line 114, ../sass/screen.scss */
+.twitter {
+  background: #b1c0c9;
+  top: 120px;
+  left: 120px; }
+  /* line 54, ../sass/_base.scss */
+  .twitter a:before {
+    font-family: 'icomoon';
+    content: "\e003";
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased; }
+
+/* line 122, ../sass/screen.scss */
+.linkedin {
+  background: #9fa617;
+  top: 120px;
+  left: 240px; }
+  /* line 54, ../sass/_base.scss */
+  .linkedin a:before {
+    font-family: 'icomoon';
+    content: "\e000";
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased; }
+
+/* line 130, ../sass/screen.scss */
+.github {
+  background: #58574b;
+  left: 360px;
+  top: 120px; }
+  /* line 54, ../sass/_base.scss */
+  .github a:before {
+    font-family: 'icomoon';
+    content: "\e004";
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased; }
+
+/* line 138, ../sass/screen.scss */
+.behance {
+  background: #006e9d;
+  top: 240px;
+  left: 120px; }
+  /* line 54, ../sass/_base.scss */
+  .behance a:before {
+    font-family: 'icomoon';
+    content: "\e002";
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased; }
+
+/* line 146, ../sass/screen.scss */
+.email {
+  background: #f78e1e;
+  top: 0;
+  left: 480px; }
+  /* line 54, ../sass/_base.scss */
+  .email a:before {
+    font-family: 'icomoon';
+    content: "\e006";
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased; }
+
+/* line 166, ../sass/screen.scss */
+.content {
+  padding: 30px;
+  max-width: 840px;
+  margin: 0 auto; }
+
+@media (max-width: 840px) {
+  /* line 173, ../sass/screen.scss */
+  .tiles {
+    width: 480px; }
+
+  /* line 176, ../sass/screen.scss */
+  .h {
+    left: 120px;
+    top: 0; }
+
+  /* line 180, ../sass/screen.scss */
+  .twitter {
+    left: 0;
+    top: 360px; }
+
+  /* line 184, ../sass/screen.scss */
+  .dribbble {
+    left: 0;
+    top: 120px; }
+
+  /* line 188, ../sass/screen.scss */
+  .linkedin {
+    top: 0; }
+
+  /* line 191, ../sass/screen.scss */
+  .behance {
+    left: 240px;
+    top: 120px; }
+
+  /* line 195, ../sass/screen.scss */
+  .email {
+    left: 360px; } }
+@media (max-width: 480px) {
+  /* line 205, ../sass/screen.scss */
+  h1 span {
+    white-space: nowrap; }
+
+  /* line 209, ../sass/screen.scss */
+  .tiles {
+    width: 240px; }
+
+  /* line 212, ../sass/screen.scss */
+  .behance {
+    left: 120px; }
+
+  /* line 215, ../sass/screen.scss */
+  .linkedin {
+    left: 0;
+    top: 480px; }
+
+  /* line 219, ../sass/screen.scss */
+  .github {
+    left: 120px;
+    top: 240px; }
+
+  /* line 223, ../sass/screen.scss */
+  .email {
+    top: 360px;
+    left: 120px; } }
