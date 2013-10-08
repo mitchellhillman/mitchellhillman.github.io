@@ -86,10 +86,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 15, ../sass/screen.scss */
 body {
+  color: black;
   font-family: "Helvetica", sans-serif;
   font-size: 1.125em;
   font-weight: 300;
-  background: black;
 }
 
 /* line 35, ../sass/screen.scss */
