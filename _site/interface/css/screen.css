@@ -86,13 +86,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 15, ../sass/screen.scss */
 body {
-  color: black;
   font-family: "Helvetica", sans-serif;
   font-size: 1.125em;
   font-weight: 300;
+  background: black;
 }
 
-/* line 21, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 h1 {
   margin: 0 0 18px 0;
   font-size: 1.333em;
@@ -100,49 +100,50 @@ h1 {
   line-height: 1.2em;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 p {
   margin: 0;
   line-height: 1.5em;
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 a {
   color: black;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 36, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 a:hover {
   border-bottom: 2px solid black;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 form input {
   -webkit-appearance: none;
   outline: none;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .banner {
   height: 600px;
   background: url("../img/banners/banner-03.jpg") center;
   position: relative;
+  border-bottom: 2px solid black;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .tiles {
   position: relative;
   width: 840px;
   height: 600px;
   margin: 0 auto;
 }
-/* line 69, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .tiles li {
   width: 120px;
   max-width: 120px;
@@ -156,7 +157,7 @@ form input {
   -o-transition: top, left 0.5s;
   transition: top, left 0.5s;
 }
-/* line 78, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .tiles li a {
   display: block;
   width: 100%;
@@ -167,7 +168,7 @@ form input {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 84, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .tiles li a:hover {
   color: black;
   background: white;
@@ -178,16 +179,16 @@ form input {
   transition: all 0.5s;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .logo {
   background: black;
-  font-size: 2em;
+  font-size: 14px;
   font-weight: 500;
 }
 /* line 54, ../sass/_base.scss */
 .logo:before {
   font-family: 'icomoon';
-  content: "\e007";
+  content: "\e001";
   speak: none;
   font-weight: normal;
   font-variant: normal;
@@ -196,7 +197,7 @@ form input {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 .dribbble {
   background: #c73367;
   top: 0;
@@ -214,7 +215,7 @@ form input {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .twitter {
   background: #b1c0c9;
   top: 120px;
@@ -232,7 +233,7 @@ form input {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 122, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .linkedin {
   background: #9fa617;
   top: 120px;
@@ -250,7 +251,7 @@ form input {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 .github {
   background: #58574b;
   left: 360px;
@@ -268,7 +269,7 @@ form input {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .behance {
   background: #006e9d;
   top: 240px;
@@ -286,7 +287,7 @@ form input {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 146, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .email {
   background: #f78e1e;
   top: 0;
@@ -304,82 +305,87 @@ form input {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .content {
+  background: white;
+}
+
+/* line 197, ../sass/screen.scss */
+.section {
   padding: 30px;
   max-width: 840px;
   margin: 0 auto;
 }
 
 @media (max-width: 840px) {
-  /* line 173, ../sass/screen.scss */
+  /* line 204, ../sass/screen.scss */
   .tiles {
     width: 480px;
   }
 
-  /* line 176, ../sass/screen.scss */
+  /* line 207, ../sass/screen.scss */
   .h {
     left: 120px;
     top: 0;
   }
 
-  /* line 180, ../sass/screen.scss */
+  /* line 211, ../sass/screen.scss */
   .twitter {
     left: 0;
     top: 360px;
   }
 
-  /* line 184, ../sass/screen.scss */
+  /* line 215, ../sass/screen.scss */
   .dribbble {
     left: 0;
     top: 120px;
   }
 
-  /* line 188, ../sass/screen.scss */
+  /* line 219, ../sass/screen.scss */
   .linkedin {
     top: 0;
   }
 
-  /* line 191, ../sass/screen.scss */
+  /* line 222, ../sass/screen.scss */
   .behance {
     left: 240px;
     top: 120px;
   }
 
-  /* line 195, ../sass/screen.scss */
+  /* line 226, ../sass/screen.scss */
   .email {
     left: 360px;
   }
 }
 @media (max-width: 480px) {
-  /* line 205, ../sass/screen.scss */
+  /* line 236, ../sass/screen.scss */
   h1 span {
     white-space: nowrap;
   }
 
-  /* line 209, ../sass/screen.scss */
+  /* line 240, ../sass/screen.scss */
   .tiles {
     width: 240px;
   }
 
-  /* line 212, ../sass/screen.scss */
+  /* line 243, ../sass/screen.scss */
   .behance {
     left: 120px;
   }
 
-  /* line 215, ../sass/screen.scss */
+  /* line 246, ../sass/screen.scss */
   .linkedin {
     left: 0;
     top: 480px;
   }
 
-  /* line 219, ../sass/screen.scss */
+  /* line 250, ../sass/screen.scss */
   .github {
     left: 120px;
     top: 240px;
   }
 
-  /* line 223, ../sass/screen.scss */
+  /* line 254, ../sass/screen.scss */
   .email {
     top: 360px;
     left: 120px;

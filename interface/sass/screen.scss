@@ -13,10 +13,24 @@
 		color: color$darkblue;
 	}
 	body {
-		color: black;
+		// color: black;
 		font-family: $sans;
 		font-size: 1.125em;
 		font-weight: 300;
+		background: black;
+		// padding-bottom: 20px;
+		// padding: 20px;
+		// position: relative;
+		// &:before {
+		// 	content: '';
+		// 	display: block;
+		// 	height: 20px;
+		// 	width: 100%;
+		// 	position: absolute;
+		// 	bottom: 0;
+		// 	left: 0;
+		// 	background: black;
+		// }
 	}
 	h1 {
 		margin: 0 0 18px 0;
@@ -58,6 +72,7 @@
 		height: $banner_height;
 		background: url('../img/banners/banner-03.jpg') center;
 		position: relative;
+		border-bottom: 2px solid black;
 	}
 
 	// Tiles
@@ -93,9 +108,9 @@
 	.logo {
 		// background: $magenta;
 		background: black;
-		font-size: 2em;
+		font-size: 14px;
 		font-weight: 500;
-		@include font-icon('\e007');
+		@include font-icon('\e001');
 	}
 	// .h { 
 	// 	@extend .logo;
@@ -164,6 +179,22 @@
 
 	// content
 	.content {
+		
+		background: white;
+		// color: white;
+		// position: relative;
+		// &:before {
+		// 	content: '';
+		// 	display: block;
+		// 	height: 20px;
+		// 	width: 100%;
+		// 	position: absolute;
+		// 	bottom: 0;
+		// 	left: 0;
+		// 	background: black;
+		// }
+	}
+	.section {
 		padding: 30px;
 		max-width: $grid * 7;
 		margin: 0 auto;
