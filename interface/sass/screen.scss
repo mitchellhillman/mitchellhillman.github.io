@@ -1,262 +1,78 @@
-@import "compass/reset";
-@import "compass/css3";
+
 @import "base";
 
 // General
 // ================================================
 	::selection {
-		background: $lightblue;
-		color: color$darkblue;
+		background: $blue;
+		color: white;
 	}
 	::-moz-selection {
-		background: $lightblue;
-		color: color$darkblue;
+		background: $blue;
+		color: white;
 	}
 	body {
-		color: black;
-		font-family: $sans;
-		font-size: 1.125em;
-		font-weight: 300;
-		// background: black;
-		// padding-bottom: 20px;
-		// padding: 20px;
-		// position: relative;
-		// &:before {
-		// 	content: '';
-		// 	display: block;
-		// 	height: 20px;
-		// 	width: 100%;
-		// 	position: absolute;
-		// 	bottom: 0;
-		// 	left: 0;
-		// 	background: black;
-		// }
-	}
-	h1 {
-		margin: 0 0 18px 0;
-		font-size: 1.333em;
-		font-weight: 700;
-		line-height: 1.2em;
-		
+		font-family: 'futura-book', sans-serif;
+		font-size: 1.25em;
+		line-height: 2em;
+		color: $black;
 	}
 	p {
-		margin: 0;
-		line-height: 1.5em;		
-	}
-	a {
-		color: black;
-		font-weight: bold;
-		text-decoration: none;
-		&:hover {
-			border-bottom: 2px solid black;
-		}
+		margin: 1em 0;
 	}
 	strong {
+		font-family: 'futura-heavy', sans-serif;
 		font-weight: 700;
 	}
-	form {
-		input {
-			-webkit-appearance: none;
-			outline: none;
+	a {
+		text-decoration: none;
+		color: $black;
+		border-bottom: 2px solid $black;
+		&:hover {
+			color: $blue;
+			border-color: $blue;
 		}
 	}
-
-
-// Layout
-// ================================================
-	$grid: 120px;
-	$banner_height: $grid * 5;
-
-	// Banner
-	.banner {
-		height: $banner_height;
-		background: url('../img/banners/banner-03.jpg') center;
-		position: relative;
-		border-bottom: 2px solid black;
+	.dropcap {
+		font-family: 'futura-heavy', sans-serif;
+		font-size: 4em;
+		// float: right;
+		margin: 0.5em 0;
 	}
-
-	// Tiles
-	.tiles {
-		position: relative;
-		width: $grid * 7;
-		height: $banner_height;
-		margin: 0 auto;
+	.social {
+		margin: 2em 0 1em 0;
+		@include clearfix;
 		li {
-			width: $grid;
-			max-width: $grid;
-			height: $grid;
-			line-height: $grid + 10px;
-			text-align: center;
-			color: white;
-			position: absolute;
-			@include transition(top, left .5s);
-			a {
-				display: block;
-				width: 100%;
-				height: 100%;
-				color: white;
-				@include transition(all .5s);
-				&:hover {
-					color: black;
-					background: white;
-					border: 0;
-					@include transition(all .5s);
-				}
+			float: left;
+		}
+		a {
+			text-decoration: none;
+			border: 2px solid darken(white, 30%);
+			@include border-radius(2px);
+			float: left;
+			padding: 0 0.75em;
+			line-height: 1.75em;
+			margin-right: 1em;
+			margin-bottom: 1em;
+			color: darken(white, 40%);
+			&:hover {
+				border-color: $black;
+				color: $black;
 			}
+			&.dribbble:hover { color: $dribbble; border-color: $dribbble; }
+			&.linkedin:hover { color: $linkedin; border-color: $linkedin; }
+			&.behance:hover { color: $behance; border-color: $behance; }
+			&.twitter:hover { color: $twitter; border-color: $twitter; }
 		}
-	}
-	.logo {
-		// background: $magenta;
-		background: black;
-		font-size: 14px;
-		font-weight: 500;
-		@include font-icon('\e001');
-	}
-	// .h { 
-	// 	@extend .logo;
-	// 	background: transparent;
-	// 	top: $grid;
-	// 	left: 0px;
-	// }
-	.dribbble {
-		background: $pink;
-		top: 0;
-		left: $grid;
-		a {
-			@include font-icon('\e005');	
-		}
-	}
-	.twitter { 
-		background: $lightblue;
-		top: $grid;
-		left: $grid;
-		a {
-			@include font-icon('\e003');
-		}
-	}
-	.linkedin { 
-		background: $green; 
-		top: $grid;
-		left: $grid * 2;
-		a {
-			@include font-icon('\e000');
-		}
-	}
-	.github { 
-		background: $brown;
-		left: $grid * 3;
-		top: $grid;
-		a {
-			@include font-icon('\e004');
-		}
-	}
-	.behance { 
-		background: $darkblue; 
-		top: $grid * 2;
-		left: $grid;		
-		a {
-			@include font-icon('\e002');
-		}
-	}
-	.email { 
-		background: $orange;
-		top: 0;
-		left: $grid * 4;
-		a {
-			@include font-icon('\e006');
-		}
-	}
-	// .down { 
-	// 	background: transparent;
-	// 	// color: $brown !important;
-	// 	top: auto;
-	// 	bottom: 0;
-	// 	left: $grid * 6;
-	// 	@include font-icon('\e001');
-	// 	font-size: 1.5em;
-	// }	
-
-
-	// content
-	.content {
-		
-		background: white;
-		// color: white;
-		// position: relative;
-		// &:before {
-		// 	content: '';
-		// 	display: block;
-		// 	height: 20px;
-		// 	width: 100%;
-		// 	position: absolute;
-		// 	bottom: 0;
-		// 	left: 0;
-		// 	background: black;
-		// }
 	}
 	.section {
-		padding: 30px;
-		max-width: $grid * 7;
-		margin: 0 auto;
+		padding: 1em 12.5%;
 	}
-
-	@media (max-width: $grid * 7) {
-		.tiles {
-			width: $grid * 4;	
+@media (max-width: 600px) {
+	body {
+		font-size: 1em;
+		p {
+			margin: 1.2em 0;
 		}
-		.h {
-			left: $grid;
-			top: 0;
-		}
-		.twitter {
-			left: 0;
-			top: $grid * 3;
-		}
-		.dribbble {
-			left: 0;
-			top: $grid;
-		}
-		.linkedin {
-			top: 0;
-		}
-		.behance {
-			left: $grid * 2;
-			top: $grid;
-		}
-		.email {
-			left: $grid * 3;
-		}
-		// .down {
-		// 	left: $grid * 3;
-		// }
 	}
-
-	@media (max-width: $grid * 4) {
-		h1 {
-			span {
-				white-space: nowrap;
-			}
-		}
-		.tiles {
-			width: $grid * 2;
-		}
-		.behance {
-			left: $grid;
-		}
-		.linkedin {
-			left: 0;
-			top: $grid * 4;
-		}
-		.github {
-			left: $grid;
-			top: $grid * 2;
-		}
-		.email {
-			top: $grid * 3;
-			left: $grid;
-		}
-		// .down {
-		// 	display: none;
-		// 	// left: $grid;
-		// }
-	}
+}
