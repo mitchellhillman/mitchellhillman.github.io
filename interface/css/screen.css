@@ -205,3 +205,9 @@ a:hover {
     margin: 1.2em 0;
   }
 }
+@media (max-width: 480px) {
+  /* line 80, ../sass/screen.scss */
+  .section {
+    padding: 1em 20px;
+  }
+}
