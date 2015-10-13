@@ -7,8 +7,12 @@ body {
 	font-family: $serif;
 	font-size: 24px;
 	max-width: 26em;
-	margin: 2em;
+	margin: 10%;
 	line-height: 1.4;
+	@media all and (max-width: 760px) {
+		font-size: 16px;
+		margin: 6%;
+	}
 }
 h1 {
 	background: red;
@@ -23,6 +27,7 @@ h1 {
 h2 {
 	font-weight: bold;
 	font-style: italic;
+	margin: 0.75em 0;
 }
 p, ul {
 	margin: 0.75em 0;
@@ -41,6 +46,10 @@ a {
 		text-align: center;
 		vertical-align: middle;
 		margin: 0 1.1em 0.5em 0;
+		@media all and (max-width: 480px) {
+			margin: 2em 0;
+			display: block;
+		}
 	}
 	img {
 		width: 100%;
