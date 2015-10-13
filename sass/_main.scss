@@ -30,3 +30,27 @@ p, ul {
 a {
 	color: red;
 }
+
+// ----
+// Logos
+// ----
+
+.logos {
+	li {
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+		margin: 0 1.1em 0.5em 0;
+	}
+	img {
+		width: 100%;
+		max-width: 150px;
+		display: block;
+	}
+	.uva {
+		width: 120px;
+	}
+	.mcgraw-hill {
+		width: 90px;
+	}
+}
