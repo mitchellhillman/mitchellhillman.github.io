@@ -15,8 +15,9 @@
 
 // Fonts
 // ===================================
-
-	$serif: "Times New Roman", serif; 
+	@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic);
+	$serif: 'PT Serif', "Times New Roman", serif; 
+	$sans: sans-serif; 
 
 // Utilities
 // ===================================
