@@ -57,6 +57,13 @@ ul {
  	max-width: 640px;
  }
 
+ @media all and (max-width: 480px) {
+ 	.portrait,
+ 	.content {
+ 		width: auto;
+ 	}
+ }
+
 // ----
 // Masthead
 // ----
