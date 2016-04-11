@@ -61,6 +61,11 @@ ul {
  	.portrait,
  	.content {
  		width: auto;
+ 		margin-bottom: 0;
+ 	}
+ 	.portrait {
+ 		// height: 60vh;
+ 		// width: 100%;
  	}
  }
 
@@ -69,11 +74,14 @@ ul {
 // ----
 
 .masthead {
-	background: black;
 	width: 240px;
-	padding: 10px;
-	font-size: 16px;
-	@include clearfix;
+	h1 {
+		background: black;
+		width: 240px;
+		padding: 10px;
+		font-size: 16px;
+		@include clearfix;
+	}
 	span {
 		float: left;
 		width: 30px;
@@ -83,6 +91,14 @@ ul {
 		line-height: 30px;
 		text-transform: uppercase;
 	}
+	@media all and (max-width: 480px) {
+		width: 100%;
+		background: black;
+		h1 {
+			margin: 0 auto;
+		}
+	}
+
 }
  
 
@@ -155,4 +171,5 @@ ul {
 	.mcgraw-hill {
 		width: 90px;
 	}
+
 }
