@@ -1,13 +1,51 @@
 <script>
     import handles from './handles.vue'
 
+    const getMidpoint = function middlePoint(x1, y1, x2, y2) {
+        return [(x1 + x2) / 2, (y1 + y2) / 2];
+    }
+
+    // returns true iff the line from (a,b)->(c,d) intersects with (p,q)->(r,s)
+    const intersects = function (a,b,c,d,p,q,r,s) {
+        var det, gamma, lambda;
+        det = (c - a) * (s - q) - (r - p) * (d - b);
+        if (det === 0) {
+            return false;
+        } else {
+            lambda = ((s - q) * (r - a) + (p - r) * (s - b)) / det;
+            gamma = ((b - d) * (r - a) + (c - a) * (s - b)) / det;
+            return (0 < lambda && lambda < 1) && (0 < gamma && gamma < 1);
+        }
+    };
+
+    const isValidPolygon = function (draftPolygon, offsetX, offsetY) {
+
+        let polygonList= draftPolygon.toString().trim().split(' ')
+
+        let coords = []
+        
+        polygonList.forEach(coordString => {
+            let coord = coordString.split(',')
+            coords.push(coord)
+        });
+
+        for(var i = 1; i < coords.length - 1; i++) {
+            let intersection = intersects(coords[i-1][0], coords[i-1][1], coords[i][0], coords[i][1], coords[coords.length - 1][0], coords[coords.length - 1][1], offsetX, offsetY)
+            if (intersection) {
+                return false
+            }
+        }
+
+        return true
+    }
+
     export default {
         components: {
             handles
         },
-        data() {
+        data: function() {
             return {
-                tool: "scale",
+                tool: "polygon",
                 draftPolygon: [],
                 polygons: [],
                 polygonStart: undefined,
@@ -15,6 +53,17 @@
                     yardstickLength: undefined,
                     start: undefined, 
                     end: undefined
+                }
+            }
+        },
+        computed: {
+            scaleMidpoint: function () {
+                // math to get midpoint
+                const midpoint = getMidpoint(this.scale.start.x, this.scale.start.y, this.scale.end.x, this.scale.end.y)
+                console.log('midpoint', midpoint)
+                return {
+                    x: midpoint[0],
+                    y: midpoint[1]
                 }
             }
         },
@@ -34,20 +83,22 @@
                     this.drawScale(e)
                 }
             },
-            drawPolygon: function (e) {                
-                // Close the polygon
-                if(e.target.id === "closePolygonTarget") {
-                    this.polygons.push(this.draftPolygon)
-                    this.draftPolygon = []
-                    this.polygonStart = undefined                    
-                }
-                // Add vertices
-                else {
-                    if(this.polygonStart === undefined) {
-                        this.polygonStart = {x: e.offsetX, y: e.offsetY}
+            drawPolygon: function (e) {
+                if(isValidPolygon(this.draftPolygon, e.offsetX, e.offsetY) || this.polygonStart === undefined) {
+                    // Close the polygon
+                    if(e.target.id === "closePolygonTarget") {
+                        this.polygons.push(this.draftPolygon)
+                        this.draftPolygon = []
+                        this.polygonStart = undefined                    
                     }
-                    this.draftPolygon = this.draftPolygon + e.offsetX + ',' + e.offsetY + ' '
-                }
+                    // Add vertices
+                    else {
+                        if(this.polygonStart === undefined) {
+                            this.polygonStart = {x: e.offsetX, y: e.offsetY}
+                        }
+                        this.draftPolygon = this.draftPolygon + e.offsetX + ',' + e.offsetY + ' '
+                    }
+                } 
             },
             drawScale: function(e) {
                 if(this.scale.yardstickLength) {
@@ -92,6 +143,11 @@
                         v-bind:y2="scale.end.y" 
                         style="stroke:rgb(255,0,0);stroke-width:3" />
                     <circle v-if="scale.end" v-bind:cx="scale.end.x" v-bind:cy="scale.end.y" r="20" stroke="transparent" fill="rgba(255,0,0,0.5)" stroke-width="1"/>
+                    <text 
+                        v-if="scale.end && scaleMidpoint"
+                        v-bind:x="scaleMidpoint.x"
+                        v-bind:y="scaleMidpoint.y" 
+                        style="font-weight: bold; fill: red">{{ scale.yardstickLength }}'</text>
                 </g>
                 <g id="draft-polygon">
                     <polygon 
@@ -99,6 +155,8 @@
                         v-if="draftPolygon" 
                         v-bind:points="draftPolygon" 
                         fill="rgba(255,100,255,0.6)" stroke="rgba(255,100,255,0.8)" />
+                    <polyline v-bind:points="draftPolygon" stroke="rgba(255,100,255,1)" stroke-width="3"
+                                stroke-linecap="round" fill="none" stroke-linejoin="round"/>
                     <circle id="closePolygonTarget" v-if="polygonStart" v-on:click="useTool" v-bind:cx="polygonStart.x" v-bind:cy="polygonStart.y" r="20" stroke="transparent" fill="rgba(255,0,255,0.2)" stroke-width="1"/>
                 </g>
             </svg>
