@@ -1,0 +1,60 @@
+.resume {
+  margin: 0 auto;
+  max-width: 760px;
+  padding: 5% 20px;
+}
+.resume__heading {
+  font-weight: bold;
+  font-size: 34px;
+  margin: 0 0 16px 0;
+}
+.resume__sectionHeading {
+  font-size: 24px;
+  margin: 0 0 16px 0;
+}
+.resume__name {
+  margin: 0;
+  font-weight: bold;
+}
+
+.resume__title {
+  margin: 0 0 16px 0;
+  font-style: italic;
+}
+
+.resume__location {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.resume__phone {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.resume__email {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.resume__phone {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.resume__about {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 16px 0;
+}
+@media print {
+  .resume {
+    margin: 0;
+    max-width: none;
+    padding: 0;
+  }
+}

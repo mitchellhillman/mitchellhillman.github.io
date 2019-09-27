@@ -1,0 +1,37 @@
+{
+  "name": "mitchellhillman.github.io",
+  "version": "1.0.0",
+  "description": "My vanity website",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --out-dir docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitchellhillman/mitchellhillman.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitchellhillman/mitchellhillman.github.io/issues"
+  },
+  "homepage": "https://github.com/mitchellhillman/mitchellhillman.github.io#readme",
+  "dependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "hookrouter": "^1.2.3",
+    "parcel": "^1.12.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-react": "^7.0.0"
+  }
+}

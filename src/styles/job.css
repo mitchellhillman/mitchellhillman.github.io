@@ -1,0 +1,49 @@
+.job {
+  margin: 48px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.job__title {
+  font-weight: bold;
+  margin: 0;
+}
+.job__company {
+  font-size: 12px;
+  font-style: italic;
+  margin: 0;
+}
+.job__location {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+.job__dates {
+  font-size: 12px;
+  font-style: italic;
+  margin: 0;
+}
+.job__description {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 16px 0;
+}
+.job__skills {
+  margin: 10px 0;
+}
+.job__skill {
+  font-size: 12px;
+  background: #e5e5e5;
+  padding: 0 10px;
+  line-height: 2;
+  display: inline-block;
+  margin: 0 6px 6px 0;
+  border-radius: 8px;
+}
+@media print {
+  .job {
+    margin: 20px 0;
+    page-break-inside: avoid;
+  }
+  .job__skill {
+    border: 1px solid black;
+  }
+}
