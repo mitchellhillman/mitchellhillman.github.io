@@ -9,8 +9,7 @@ import {
   location,
   name,
   phone,
-  title,
-  url
+  title
 } from './data/resume.json';
 
 const Resume = () => (
@@ -21,7 +20,6 @@ const Resume = () => (
     <p className="resume__location">{location}</p>
     <p className="resume__phone">{phone}</p>
     <p className="resume__email"><a href={`mailto:${email}`}>{email}</a></p>
-    <p className="resume__phone"><a href={url}>{url}</a></p>
     <p className="resume__about">{about}</p>
     {
       experience.map(job => <Job {...job} key={job.company} />)
