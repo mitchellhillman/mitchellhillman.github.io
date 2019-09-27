@@ -13,7 +13,7 @@
       "location": "Charlottesville, Virginia",
       "description": "",
       "skills": [ "Webpack", "React", "ES6", "Backbone.js", "Software Architecture", "JSS" ],
-      "start": "04/2018",
+      "start": "04/2019",
       "end": "Present"
     },
     {
@@ -22,8 +22,8 @@
       "location": "Charlottesville, Virginia",
       "description": "Primarily responsible for design and development of new product features built in a React/Redux single page app. Involved in software architecture and general product strategy discussions. Duties include mentoring team members, code review, and feature execution.",
       "skills": [ "ES6", "Backbone.js", "React.js (Preact)", "Webpack", "NPM", "Modular CSS", "PostCSS", "SASS", "Compass", "Mocha, Chai, Webdriver.io", "Emacs", "Git" ],
-      "start": "01/2018",
-      "end": "05/2016"
+      "start": "05/2016",
+      "end": "01/2018"
     },
     {
       "company": "Silverchair",
@@ -31,8 +31,8 @@
       "location": "Charlottesville, Virginia",
       "description": "Lead a team of UI developers to create custom front-end expressions of Silverchair's scratch-built online publishing platform.",
       "skills": ["Project Management", "Training & Career Development", "Enterprise Front End Architecture", "508 Compliance", "WCAG 2.0"],
-      "start": "05/2016",
-      "end": "09/2014"
+      "start": "09/2014",
+      "end": "05/2016"
     },
     {
       "company": "CFA Institute",
@@ -40,8 +40,8 @@
       "location": "Charlottesville, Virginia",
       "description": "Design web interfaces for a global organization with a focus on user testing and data driven strategies",
       "skills": [ "Wireframing", "Interactive HTML/CSS Prototypes", "Velocity", "SASS / Compass", ".NET", "Sharepoint", "Micosoft Visual Studio"],
-      "start": "09/2014",
-      "end": "05/2014"
+      "start": "05/2014",
+      "end": "09/2014"
     },
     {
       "company": "Journey Group, Inc.",
@@ -49,8 +49,8 @@
       "location": "Charlottesville, Virginia",
       "description": "Develop ad hoc web platforms through all phases of the UX lifecycle from information architecture, to design and code.",
       "skills": [  "Art direction", "Interaction Design", "Information architecture", "HTML / CSS", "Drupal", "jQuery", "LAMP"],
-      "start": "04/2014",
-      "end": "05/2013"
+      "start": "05/2013",
+      "end": "04/2014"
     },
     {
       "company": "Venveo",
@@ -58,8 +58,8 @@
       "location": "Blacksburg, Virginia",
       "description": "",
       "skills": [ "Interaction design", "Angular.js", "Expression Engine CMS", "Cross-browser testing", "User Testing", "inVision", "Content strategy" ],
-      "start": "05/2013",
-      "end": "02/2012"
+      "start": "02/2012",
+      "end": "05/2013"
     },
     {
       "company": "Schrader International",
@@ -69,8 +69,8 @@
       "skills": [
         "Web design", "Project management", "Corporate brand guidelines", "Art direction", "Product photography"
        ],
-      "start": "06/2011",
-      "end": "08/2010"
+      "start": "08/2010",
+      "end": "06/2011"
     }
   ],
   "education": [
