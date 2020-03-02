@@ -5,14 +5,40 @@
   "phone": "(608) 322-9118",
   "email": "mitchellhillman@gmail.com",
   "url": "www.mitchellhillman.com",
-  "about": "Technology and design generalist. I am always looking for opportunities to create engaging online products through cutting edge technology, and user focused design. I have experience across the web development stack but am especially interested in front-end technologies. I particularly like functional programming and component based UI architecture.",
+  "about": "Multi-talented software engineer with an emphasis in front end technologies and a background in design",
+  skills: [
+    "Accessibility",
+    "Art direction",
+    "Content strategy",
+    "Branding",
+    "Cross-browser testing",
+    "Project Management",
+    "Software Architecture",
+    "Test Driven Development",
+    "Training",
+    "User Testing",
+    "UX Design",
+  ],
+
+  tools: [
+    "React",
+    "Storybook",
+    "Webpack",
+    "JSS",
+    "SASS / LESS",
+    "NPM",
+    "WCAG 2.0 / 508",
+    "LAMP",
+    "ES6",
+    "React Testing Library",
+    "Jest",
+  ],
   "experience": [
     {
       "company": "Bottomline Technologies",
       "title": "UI Developer",
       "location": "Charlottesville, Virginia",
-      "description": "",
-      "skills": [ "Webpack", "React", "ES6", "Backbone.js", "Software Architecture", "JSS" ],
+      "description": "Develop library of shared UI assets used by enterprise banking and payment management applications across a several lines of business within a global corporation",
       "start": "04/2019",
       "end": "Present"
     },
@@ -20,8 +46,7 @@
       "company": "Room Key",
       "title": "Lead UI Developer",
       "location": "Charlottesville, Virginia",
-      "description": "Primarily responsible for design and development of new product features built in a React/Redux single page app. Involved in software architecture and general product strategy discussions. Duties include mentoring team members, code review, and feature execution.",
-      "skills": [ "ES6", "Backbone.js", "React.js (Preact)", "Webpack", "NPM", "Modular CSS", "PostCSS", "SASS", "Compass", "Mocha, Chai, Webdriver.io", "Emacs", "Git" ],
+      "description": "Responsible for design and development of new product features built in a React/Redux single page app. Was involved in software architecture and general product strategy discussions. Duties include mentoring team members, code review, and feature execution.",
       "start": "05/2016",
       "end": "01/2018"
     },
@@ -29,8 +54,7 @@
       "company": "Silverchair",
       "title": "UI Development Manager",
       "location": "Charlottesville, Virginia",
-      "description": "Lead a team of UI developers to create custom front-end expressions of Silverchair's scratch-built online publishing platform.",
-      "skills": ["Project Management", "Training & Career Development", "Enterprise Front End Architecture", "508 Compliance", "WCAG 2.0"],
+      "description": "Team lead of 7 UI developers. Worked to create white labeled themes for custom-built online publishing platform.",
       "start": "09/2014",
       "end": "05/2016"
     },
@@ -39,7 +63,6 @@
       "title": "UX Designer and Developer",
       "location": "Charlottesville, Virginia",
       "description": "Design web interfaces for a global organization with a focus on user testing and data driven strategies",
-      "skills": [ "Wireframing", "Interactive HTML/CSS Prototypes", "Velocity", "SASS / Compass", ".NET", "Sharepoint", "Micosoft Visual Studio"],
       "start": "05/2014",
       "end": "09/2014"
     },
@@ -47,8 +70,7 @@
       "company": "Journey Group, Inc.",
       "title": "Web Developer",
       "location": "Charlottesville, Virginia",
-      "description": "Develop ad hoc web platforms through all phases of the UX lifecycle from information architecture, to design and code.",
-      "skills": [  "Art direction", "Interaction Design", "Information architecture", "HTML / CSS", "Drupal", "jQuery", "LAMP"],
+      "description": "Develop custom publishing platforms. Work included UX design, information architecture and custom Drupal implimentations.",
       "start": "05/2013",
       "end": "04/2014"
     },
@@ -56,8 +78,7 @@
       "company": "Venveo",
       "title": "Front End Developer",
       "location": "Blacksburg, Virginia",
-      "description": "",
-      "skills": [ "Interaction design", "Angular.js", "Expression Engine CMS", "Cross-browser testing", "User Testing", "inVision", "Content strategy" ],
+      "description": "Develop HTML/CSS implimentation of custom themes for marketing websites",
       "start": "02/2012",
       "end": "05/2013"
     },
@@ -65,10 +86,7 @@
       "company": "Schrader International",
       "title": "Graphic Designer",
       "location": "Alta Vista, Virginia",
-      "description": "Graphic Designer for the internal marketing department at Schrader International. Responsibilities include designing a products catalog (online and print), establish brand guideline manual and miscellaneous sales literature and trade show displays.",
-      "skills": [
-        "Web design", "Project management", "Corporate brand guidelines", "Art direction", "Product photography"
-       ],
+      "description": "Design product catalog (online and print), brand guideline manual, sales literature and trade show displays",
       "start": "08/2010",
       "end": "06/2011"
     }
