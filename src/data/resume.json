@@ -8,10 +8,9 @@
   "about": "Multi-talented software engineer with an emphasis in front end technologies and a background in design",
   skills: [
     "Accessibility",
-    "Art direction",
-    "Content strategy",
     "Branding",
-    "Cross-browser testing",
+    "Content Strategy",
+    "Cross-browser Testing",
     "Project Management",
     "Software Architecture",
     "Test Driven Development",
@@ -46,7 +45,7 @@
       "company": "Room Key",
       "title": "Lead UI Developer",
       "location": "Charlottesville, Virginia",
-      "description": "Responsible for design and development of new product features built in a React/Redux single page app. Was involved in software architecture and general product strategy discussions. Duties include mentoring team members, code review, and feature execution.",
+      "description": "Responsible for design and development of new product features built in a React/Redux single page app. Was involved in software architecture and general product strategy discussions. Duties included mentoring team members, code review, and feature execution.",
       "start": "05/2016",
       "end": "01/2018"
     },
@@ -54,12 +53,12 @@
       "company": "Silverchair",
       "title": "UI Development Manager",
       "location": "Charlottesville, Virginia",
-      "description": "Team lead of 7 UI developers. Worked to create white labeled themes for custom-built online publishing platform.",
+      "description": "Team lead of 7 UI developers. Created white labeled themes for custom-built online publishing platform",
       "start": "09/2014",
       "end": "05/2016"
     },
     {
-      "company": "CFA Institute",
+      "company": "CFA Institute (Contractor)",
       "title": "UX Designer and Developer",
       "location": "Charlottesville, Virginia",
       "description": "Design web interfaces for a global organization with a focus on user testing and data driven strategies",
@@ -83,7 +82,7 @@
       "end": "05/2013"
     },
     {
-      "company": "Schrader International",
+      "company": "Schrader International (Contractor)",
       "title": "Graphic Designer",
       "location": "Alta Vista, Virginia",
       "description": "Design product catalog (online and print), brand guideline manual, sales literature and trade show displays",

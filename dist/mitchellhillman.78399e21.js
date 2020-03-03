@@ -28393,7 +28393,7 @@ module.exports = {
   "email": "mitchellhillman@gmail.com",
   "url": "www.mitchellhillman.com",
   "about": "Multi-talented software engineer with an emphasis in front end technologies and a background in design",
-  skills: ["Accessibility", "Art direction", "Content strategy", "Branding", "Cross-browser testing", "Project Management", "Software Architecture", "Test Driven Development", "Training", "User Testing", "UX Design"],
+  skills: ["Accessibility", "Branding", "Content Strategy", "Cross-browser Testing", "Project Management", "Software Architecture", "Test Driven Development", "Training", "User Testing", "UX Design"],
   tools: ["React", "Storybook", "Webpack", "JSS", "SASS / LESS", "NPM", "WCAG 2.0 / 508", "LAMP", "ES6", "React Testing Library", "Jest"],
   "experience": [{
     "company": "Bottomline Technologies",
@@ -28406,18 +28406,18 @@ module.exports = {
     "company": "Room Key",
     "title": "Lead UI Developer",
     "location": "Charlottesville, Virginia",
-    "description": "Responsible for design and development of new product features built in a React/Redux single page app. Was involved in software architecture and general product strategy discussions. Duties include mentoring team members, code review, and feature execution.",
+    "description": "Responsible for design and development of new product features built in a React/Redux single page app. Was involved in software architecture and general product strategy discussions. Duties included mentoring team members, code review, and feature execution.",
     "start": "05/2016",
     "end": "01/2018"
   }, {
     "company": "Silverchair",
     "title": "UI Development Manager",
     "location": "Charlottesville, Virginia",
-    "description": "Team lead of 7 UI developers. Worked to create white labeled themes for custom-built online publishing platform.",
+    "description": "Team lead of 7 UI developers. Created white labeled themes for custom-built online publishing platform",
     "start": "09/2014",
     "end": "05/2016"
   }, {
-    "company": "CFA Institute",
+    "company": "CFA Institute (Contractor)",
     "title": "UX Designer and Developer",
     "location": "Charlottesville, Virginia",
     "description": "Design web interfaces for a global organization with a focus on user testing and data driven strategies",
@@ -28438,7 +28438,7 @@ module.exports = {
     "start": "02/2012",
     "end": "05/2013"
   }, {
-    "company": "Schrader International",
+    "company": "Schrader International (Contractor)",
     "title": "Graphic Designer",
     "location": "Alta Vista, Virginia",
     "description": "Design product catalog (online and print), brand guideline manual, sales literature and trade show displays",
@@ -28477,9 +28477,9 @@ var Resume = function Resume() {
     className: "resume"
   }, _react.default.createElement("h1", {
     className: "resume__heading"
-  }, "Resume"), _react.default.createElement("p", {
-    className: "resume__name"
   }, _resume.name), _react.default.createElement("p", {
+    className: "resume__name"
+  }, "Resume"), _react.default.createElement("p", {
     className: "resume__title"
   }, _resume.title), _react.default.createElement("p", {
     className: "resume__location"
@@ -28536,7 +28536,7 @@ var _Resume = _interopRequireDefault(require("./src/Resume"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom.default.render(_react.default.createElement(_Resume.default, null), document.getElementById('app'));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/Resume":"src/Resume.jsx"}],"../../../../usr/local/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/Resume":"src/Resume.jsx"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -28564,7 +28564,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60867" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64278" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -28595,8 +28595,9 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
         assetsToAccept.forEach(function (v) {
           hmrAcceptRun(v[0], v[1]);
         });
-      } else {
-        window.location.reload();
+      } else if (location.reload) {
+        // `location` global exists in a web worker context but lacks `.reload()` function.
+        location.reload();
       }
     }
 
@@ -28739,5 +28740,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../usr/local/lib/node_modules/parcel/src/builtins/hmr-runtime.js","index.jsx"], null)
+},{}]},{},["node_modules/parcel/src/builtins/hmr-runtime.js","index.jsx"], null)
 //# sourceMappingURL=/mitchellhillman.78399e21.js.map

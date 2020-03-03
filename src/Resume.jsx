@@ -16,8 +16,8 @@ import {
 
 const Resume = () => (
   <div className="resume">
-    <h1 className="resume__heading">Resume</h1>
-    <p className="resume__name">{name}</p>
+    <h1 className="resume__heading">{name}</h1>
+    <p className="resume__name">Resume</p>
     <p className="resume__title">{title}</p>
     <p className="resume__location">{location}</p>
     <p className="resume__phone">{phone}</p>
