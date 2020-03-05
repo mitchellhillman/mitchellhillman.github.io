@@ -29,7 +29,8 @@
 }
 @media print {
   .job {
-    margin: 20px 0;
+    padding: 20px 0;
+    margin: 0;
     page-break-inside: avoid;
   }
 }

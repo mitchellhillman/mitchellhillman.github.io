@@ -17,3 +17,8 @@ a:hover {
   max-width: 760px;
   padding: 5% 20px;
 }
+@media print {
+  body {
+    margin: 2em;
+  }
+}
