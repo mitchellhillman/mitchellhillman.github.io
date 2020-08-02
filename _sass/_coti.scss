@@ -15,7 +15,7 @@ $black: #333;
   }
   h1 {
     margin: 0 0 30px 0;
-    font-size: 28px;
+    font-size: 20px;
     font-family: 'Cormorant Garamond', serif;
     .caps {
       font-weight: 700;
@@ -44,8 +44,9 @@ $black: #333;
   .logo {
     padding: 100px 0;
     img {
-      max-width: 100%;
+      max-width: 50%;
       margin: 0 auto;
+      display: block;
     }
   }
   .logo-backgrounds {
@@ -63,7 +64,7 @@ $black: #333;
         background: $black;
       }
       .grey {
-        background: #ccc;
+        background: #bbbb;
       }
       .cream {
         background: $cream;
@@ -82,7 +83,7 @@ $black: #333;
     display: flex;
     align-items: center;
     margin: 60px 0;
-    border: 2px solid #ccc;
+    border: 2px solid #bbbb;
     .col {
       width: 50%;
       padding: 50px;
@@ -95,7 +96,7 @@ $black: #333;
     display: flex;
     align-items: center;
     margin: 60px 0;
-    border: 2px solid #ccc;
+    border: 2px solid #bbbb;
 
    .col {
       width: 50%;
@@ -129,13 +130,37 @@ $black: #333;
       margin: 10px 0 0 0;
     }
   }
+  .browser  {
+    position: relative;
+    border: 3px solid #bbbb;
+    border-top: 20px solid #bbbb;
+    border-radius: 10px 10px 0 0;
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      background: white;
+      border-radius: 100px;
+      width: 9px;
+      height: 9px;
+      position: absolute;
+      left: 3px;
+      top: -14px;
+    }
+    &:after {
+      left: 17px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
   .multi-lang-banner {
     margin: 60px 0;
     ul {
       display: flex;
       padding: 40px;
-      border: 3px solid #ccc;
-      border-top: 20px solid #ccc;
+      border: 3px solid #bbbb;
+      border-top: 20px solid #bbbb;
       border-radius: 10px 10px 0 0;
       justify-content: space-between;
       position: relative;
