@@ -1,34 +1,14 @@
 ---
 layout: default
-title: "Mitchell Hillman: Senior UI Developer"
+title: "Mitchell Hillman"
 ---
+<img class="resume__portrait" src="img/portrait.jpg" alt="Portrait of Mitchell Hillman">
 <h1 class="resume__heading">{{site.data.resume.name}}</h1>
-<p class="resume__name">Resume</p>
-<p class="resume__title">{{site.data.resume.title}}</p>
 <p class="resume__location">{{site.data.resume.location}}</p>
 <p class="resume__phone">{{site.data.resume.phone}}</p>
 <p class="resume__email"><a href={`mailto:${{site.data.resume.email}}`}>{{site.data.resume.email}}</a></p>
-<p class="resume__about">{{site.data.resume.about}}</p>
 
-<h2 class="resume__sectionHeading">Skills</h2>
-{% if site.data.resume.skills %}
-  <ul class="skills">
-    {% for skill in site.data.resume.skills %}
-      <li class="resume__skill">{{skill}}</li>
-    {% endfor %}
-  </ul>
-{% endif %}
-
-<h2 class="resume__sectionHeading">Familiar Tools</h2>
-{% if site.data.resume.tools %}
-  <ul class="skills">
-    {% for tool in site.data.resume.tools %}
-      <li class="resume__skill">{{tool}}</li>
-    {% endfor %}
-  </ul>
-{% endif %}
-
-<h2 class="resume__sectionHeading">Work Experience</h2>
+<h2 class="resume__sectionHeading">Work History</h2>
 {% include_relative _includes/_jobs.html %}
 <h2 class="resume__sectionHeading">Education</h2>
 {% include_relative _includes/_degrees.html %}

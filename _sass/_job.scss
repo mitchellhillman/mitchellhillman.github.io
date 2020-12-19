@@ -14,8 +14,7 @@
 }
 .job__location {
   font-size: 12px;
-  font-weight: bold;
-  margin: 10px 0 0 0;
+  margin: 0;
 }
 .job__dates {
   font-size: 12px;
@@ -23,6 +22,12 @@
   margin: 0;
 }
 .job__description {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 16px 0 0 0;
+}
+
+.job__contributions {
   font-size: 12px;
   line-height: 1.5;
   margin: 16px 0 0 0;
